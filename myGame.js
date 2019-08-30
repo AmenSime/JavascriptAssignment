@@ -1,18 +1,14 @@
 
 
 function generateNum(){
-//var randomNumber = Math.floor(Math.random(randomNumber*10));
-var on;
 
 
+var multiple;
 
-var randomNumber=Math.floor(Math.random()*10);
-//alert(randomNumber);
-//randomNumber = document.getElementById("demo").innerHTML;
+var randomNumber=Math.floor(Math.random()*multiple);
 var num = document.getElementById("inputNum");
 
 if(randomNumber == num){
-    //alert("Congratrulations...");
     var responseText = "Congratulations you guessed right..";
     document.getElementById('answer').innerHTML = responseText;
     
@@ -20,13 +16,14 @@ if(randomNumber == num){
 }
 
 else{
-    //alert("try again");
-    var responseText = "Try Again...";
+      var responseText = "Try Again...";
      document.getElementById('answer').innerHTML = responseText;
-     //document.getElementById('inputNum').innerHTML= " ";
+     document.getElementById('inputNum').innerHTML = null;
+ 
      
 }
  
 
 }
 
+;
