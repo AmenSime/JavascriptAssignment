@@ -3,7 +3,7 @@
 function generateNum(){
 
 
-var multiple;
+var multiple=10;
 
 var randomNumber=Math.floor(Math.random()*multiple);
 var num = document.getElementById("inputNum");
